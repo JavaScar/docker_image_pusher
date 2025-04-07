@@ -6,67 +6,13 @@ nginx:latest
 # 数据库和中间件
 mysql:8.4.0
 mariadb:latest
-docker.elastic.co/elasticsearch/elasticsearch:7.17.10
 mongo:4.4
 redis:7.2.4
 rabbitmq:3.13.3-management
-minio/minio:latest
 tdengine/tdengine:latest
 nacos/nacos-server:v2.3.0
 emqx/emqx:5.6.0
 rancher/mirrored-pause:3.6
 
-# ClearML镜像
-allegroai/clearml:latest
-
-# Kubeflow核心UI和控制组件 (Chainguard最新镜像)
-chainguard/kubeflow-centraldashboard:latest
-chainguard/kubeflow-oidc-authservice:latest
-chainguard/dexidp-dex:latest
-chainguard/kubeflow-kfam:latest
-chainguard/kubeflow-profile-controller:latest
-chainguard/kubeflow-notebook-controller:latest
-
-# Kubeflow Pipeline组件 (Chainguard最新镜像)
-chainguard/kubeflow-pipelines-api-server:latest
-chainguard/kubeflow-pipelines-persistenceagent:latest
-chainguard/kubeflow-pipelines-metadata-writer:latest
-chainguard/kubeflow-pipelines-frontend:latest
-chainguard/kubeflow-pipelines-viewer-crd-controller:latest
-chainguard/kubeflow-pipelines-visualization-server:latest
-chainguard/kubeflow-pipelines-cache-server:latest
-chainguard/kubeflow-pipelines-cache-deployer:latest
-chainguard/kubeflow-pipelines-scheduledworkflow:latest
-
-# Kubeflow训练操作符 (Chainguard最新镜像)
-chainguard/kubeflow-training-operator:latest
-chainguard/kubeflow-pytorch-operator:latest
-chainguard/kubeflow-mpi-operator:latest
-
-# Katib（超参数调优）(Chainguard最新镜像)
-chainguard/kubeflow-katib-controller:latest
-chainguard/kubeflow-katib-db-manager:latest
-chainguard/kubeflow-katib-ui:latest
-
-# KServe模型服务组件
-chainguard/kserve-controller:latest
-chainguard/kserve-storage-initializer:latest
-chainguard/kubeflow-models-web-app:latest
-
-# Notebook环境 (更新为最新镜像)
-chainguard/kubeflow-jupyter-web-app:latest
-chainguard/jupyter-tensorflow-notebook:latest
-chainguard/jupyter-pytorch-notebook:latest
-chainguard/jupyter-scipy-notebook:latest
-
-# Istio组件 (Chainguard最新镜像)
-chainguard/istio-proxyv2:latest
-chainguard/istio-pilot:latest
-
-# 监控组件
-chainguard/prometheus:latest
-chainguard/grafana:latest
-
-# 辅助组件
-chainguard/metacontroller:latest
-chainguard/kubeflow-poddefaults-webhook:latest
+bitnami/mlflow:latest
+minio/minio:latest
