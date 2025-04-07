@@ -1,14 +1,72 @@
-rabbitmq:3.13.3-management
-tdengine/tdengine:latest
-mysql:8.4.0
-busybox:1.35.0
-nacos/nacos-server:v2.3.0
-redis:7.2.4
-emqx/emqx:5.6.0
-rancher/mirrored-pause:3.6
+# 通用基础镜像
 alpine:latest
+busybox:1.35.0
 nginx:latest
-allegroai/clearml:latest
+
+# 数据库和中间件
+mysql:8.4.0
+mariadb:latest
 docker.elastic.co/elasticsearch/elasticsearch:7.17.10
 mongo:4.4
+redis:7.2.4
+rabbitmq:3.13.3-management
 minio/minio:latest
+tdengine/tdengine:latest
+nacos/nacos-server:v2.3.0
+emqx/emqx:5.6.0
+rancher/mirrored-pause:3.6
+
+# ClearML镜像
+allegroai/clearml:latest
+
+# Kubeflow核心UI和控制组件
+docker.io/kubeflow/centraldashboard:latest
+docker.io/authservice/oidc-authservice:latest
+ghcr.io/dexidp/dex:latest
+docker.io/kubeflow/kfam:latest
+docker.io/kubeflow/profiles-controller:latest
+docker.io/kubeflow/notebook-controller:latest
+
+# Kubeflow Pipeline组件
+docker.io/kubeflow/kfp-apiserver:latest
+docker.io/kubeflow/kfp-persistence-agent:latest
+docker.io/kubeflow/kfp-metadata-writer:latest
+docker.io/kubeflow/kfp-frontend:latest
+docker.io/kubeflow/kfp-viewer-crd-controller:latest
+docker.io/kubeflow/kfp-visualization-server:latest
+docker.io/kubeflow/kfp-cache-server:latest
+docker.io/kubeflow/kfp-cache-deployer:latest
+docker.io/kubeflow/kfp-scheduledworkflow:latest
+
+# Kubeflow训练操作符
+docker.io/kubeflow/training-operator:latest
+docker.io/kubeflow/pytorch-operator:latest
+docker.io/kubeflow/mpi-operator:latest
+
+# Katib（超参数调优）
+docker.io/kubeflow/katib-controller:latest
+docker.io/kubeflow/katib-db-manager:latest
+docker.io/kubeflow/katib-ui:latest
+
+# KServe模型服务组件
+kserve/kserve-controller:latest
+kserve/storage-initializer:latest
+docker.io/kubeflow/models-web-app:latest
+
+# Notebook环境
+docker.io/kubeflow/jupyter-web-app:latest
+docker.io/jupyter/tensorflow-notebook:latest
+docker.io/jupyter/pytorch-notebook:latest
+docker.io/jupyter/scipy-notebook:latest
+
+# Istio组件
+docker.io/istio/proxyv2:latest
+docker.io/istio/pilot:latest
+
+# 监控组件
+docker.io/prom/prometheus:latest
+docker.io/grafana/grafana:latest
+
+# 辅助组件
+docker.io/metacontroller/metacontroller:latest
+docker.io/kubeflownotebookswg/poddefaults-webhook:latest
