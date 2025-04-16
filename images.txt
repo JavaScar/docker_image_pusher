@@ -14,5 +14,19 @@ nacos/nacos-server:v2.3.0
 emqx/emqx:5.6.0
 rancher/mirrored-pause:3.6
 
+mlrun/mlrun:1.9.0-rc3-py39
+mlrun/mlrun-ui:1.9.0-rc3
+mlrun/jupyter:1.9.0-rc3
 bitnami/mlflow:latest
 minio/minio:latest
+bitnami/postgresql:latest
+
+#  nuclio/dashboard:latest-amd64自行上传至私库
+#  docker pull quay.io/nuclio/dashboard:latest-amd64
+#  docker tag quay.io/nuclio/dashboard:latest-amd64 registry.cn-guangzhou.aliyuncs.com/somham/nuclio-dashboard:latest
+#  docker push registry.cn-guangzhou.aliyuncs.com/somham/nuclio-dashboard:latest
+
+#  nuclio/processor:latest-amd64自行上传至私库
+#  docker pull quay.io/nuclio/processor:latest-amd64
+#  docker tag quay.io/nuclio/processor:latest-amd64 registry.cn-guangzhou.aliyuncs.com/somham/nuclio-processor:latest
+#  docker push registry.cn-guangzhou.aliyuncs.com/somham/nuclio-processor:latest
