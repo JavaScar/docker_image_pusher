@@ -16,6 +16,7 @@ rancher/mirrored-pause:3.6
 
 mlrun/mlrun:1.9.0-rc3-py39
 mlrun/mlrun-ui:1.9.0-rc3
+mlrun/mlrun-api:1.9.0-rc3
 mlrun/jupyter:1.9.0-rc3
 bitnami/mlflow:latest
 minio/minio:latest
